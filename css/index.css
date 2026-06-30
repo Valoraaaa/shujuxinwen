@@ -1,0 +1,84 @@
+/* 基础样式 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fafafa;
+    cursor: url("../images/shouxing.png") 15 15, auto;
+}
+
+/* 主标题 */
+#p0 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+/* 章节标题 */
+h2 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* 普通段落 */
+p {
+    margin-bottom: 16px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* 数据来源注释 */
+.source-note {
+    font-size: 0.85em;
+    color: #888;
+    text-indent: 0;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* 以下是每个段落的独立id，你可以单独为它们设置样式 */
+
+/* 示例：为开场故事段落设置特殊样式 */
+#p2 {
+    /* 你可以在这里添加自定义样式 */
+}
+
+#p3 {
+    /* 你可以在这里添加自定义样式 */
+}
+
+#p4 {
+    /* 你可以在这里添加自定义样式 */
+}
+
+/* 示例：为数据段落设置强调样式 */
+#p7, #p8, #p9 {
+    /* 你可以在这里添加自定义样式 */
+}
+
+/* 示例：为症状描述段落设置样式 */
+#p25, #p26, #p27, #p28, #p29, #p30 {
+    /* 你可以在这里添加自定义样式 */
+}
+
+/* 示例：为伦理讨论段落设置样式 */
+#p61, #p62, #p63, #p64, #p65, #p66, #p67, #p68 {
+    /* 你可以在这里添加自定义样式 */
+}

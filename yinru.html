@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《一公升的眼泪》——除了眼泪还有什么？</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/yinru.css">
+</head>
+<body>
+	<div class="fullscreen-video-container">
+
+    <!-- 左侧文字框 -->
+    <div class="text-box left-text"></div>
+    <!-- 右侧文字框 -->
+    <div class="text-box right-text"></div>
+
+    <div class="carousel">
+        <img src="images/shouji.png" class="mobile">
+        <div class="carousel-item" data-index="0">
+            <img src="images/01.png">
+        </div>
+        <div class="carousel-item" data-index="1">
+            <img src="images/02.png">
+        </div>
+        <div class="carousel-item" data-index="2">
+            <img src="images/03.png">
+        </div>
+    </div>
+	<audio autoplay loop preload="auto" src="images/bgm.MP3"></audio>
+	<video 
+            id="hero-video"
+            class="fullscreen-video"
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster="video-poster.jpg"
+        >
+            <source src="images/xingkong.mp4" type="video/mp4">
+        </video>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        const textData = [
+            {
+                left: `<h4><span class="accent-underline">一、安然无恙：鲜活明媚的青春常态</span></h4>
+					<p>故事开篇的池内亚也，是无数普通高中生的缩影，拥有完整的身体机能、鲜活的青春活力与无限的人生可能。15岁的她就读于重点高中，性格开朗温柔、乐观善良，热爱生活、珍视亲情与友情，对未来怀揣着青涩又热烈的憧憬。此时的亚也肢体协调、行动自如，能够自由奔跑、肆意欢笑，正常参与校园学习、体育活动与日常社交，写字、走路、进食、沟通等所有日常行为都无需借助外力，<span class="accent-underline">身体与心智均处于健康完好的状态。</span></p>`,
+                right: `<p>在这一阶段，她和所有同龄人一样，拥有自主掌控人生的权利，不必被病痛束缚，无需担忧身体失控，生活里满是校园的烟火气与青春的希望。她的人生轨迹本应是升学、成长、奔赴理想，拥有平凡却完整的人生，这种毫无缺憾的健康常态，也为后续病痛的残酷侵袭形成了强烈对比，更凸显了罕见病对普通人生的彻底颠覆。</p>`
+            },
+            {
+                left: `<h4><span class="accent-underline">二、裂痕初现：猝不及防的病症确诊</span></h4>
+				<p>平静的青春在亚也15岁这年被彻底打破，身体毫无征兆的异常，成为噩梦的开端。最初的病症细微且隐蔽，极易被忽视，<span class="accent-underline">她开始频繁出现走路不稳、步履摇晃、肢体协调性下降的情况，跑步时容易摔倒，日常动作变得笨拙迟缓，精准度大幅降低。</span>起初亚也和家人都以为只是普通的身体疲劳、运动失误，并未放在心上，但随着症状反复出现且持续加重，异常状况已经严重影响到日常学习与生活。</p>`,
+                right: `
+				<p>在家人的陪同下，亚也前往医院进行系统检查，最终被<span class="accent-underline">确诊为脊髓小脑变性症——一种目前无特效药、无法根治、会持续渐进恶化的罕见神经退行性疾病。</span>最残酷的是，该病不会损伤患者的智力与认知能力，患者会在头脑完全清醒的状态下，亲眼看着自己的身体一步步失控、衰败，直至丧失所有行动与表达能力。确诊的瞬间，亚也的人生彻底被改写，从无忧无虑的青春少女，沦为终身与病魔抗争的罕见病患者。<span class="accent-underline">突如其来的绝症、不可逆的病情进展、无药可治的医学现状，让她瞬间陷入恐惧、绝望与迷茫，也让整个家庭坠入了病痛与压力的深渊。</span></p>`
+            },
+            {
+                left: `<h4><span class="accent-underline">步步沉沦：持续恶化的病痛与人生困境</span></h4>
+				<p>确诊只是苦难的起点，脊髓小脑变性症的渐进性特质，让亚也开启了漫长且痛苦的衰败过程，身体与生活的崩塌层层递进、无法逆转。<span class="accent-underline">病情进入中期后，她的肢体不协调症状急剧加重，无法正常写字、拿取物品，频繁摔倒，彻底丧失运动能力；同时出现语言功能障碍，说话含糊不清、无法控制语调，语速紊乱，难以清晰表达自身想法；眼球转动异常，出现视物重叠、视觉模糊问题，进食吞咽困难，频繁呛咳，日常起居开始依赖家人照料。</span></p>`,
+                right: `<p><span class="accent-underline">相较于生理的痛苦，心理与社会层面的遭遇更为刺骨。</span>病情恶化让她被迫退学，告别校园生活与同龄社交，彻底脱离正常的人生轨迹；身体的残缺让她遭受异样的目光、无形的疏离与隐性的歧视，曾经开朗的性格被自卑、敏感、孤独包裹；长期的治疗、康复护理消耗了家庭大量的财力、精力，给家人带来沉重的身心负担；<span class="accent-underline">而清晰的认知让她全程清醒地感受自己的衰败，直面自己逐渐失去自我掌控权的绝望，在无尽的等待与煎熬中，承受着身体与精神的双重折磨。</span></p>
+                <p><span class="accent-underline">直至生命尽头，她始终在清醒的痛苦中挣扎，从未摆脱病痛的桎梏。</span></p>
+				<p><a href="index2.html" class="enter-btn text-item">罕见病——脊髓小脑共济失调</a></p>`
+            }
+        ];
+
+        let currentIndex = 0;
+        let carouselInit = false;
+
+        // 第一次点击页面：手机从上飞入
+        $('body').one('click', function(){
+            $('.carousel').addClass('show');
+            
+            setTimeout(() => {
+                // 初始化轮播
+                $('.carousel').carousel({
+                    numVisible: 3,
+                    indicators: false,
+                    noWrap: true,
+                    // 关键：使用 onCycleTo 回调，在轮播切换完成后触发
+                    onCycleTo: function(ele) {
+                        currentIndex = $(ele).index() - 1; // -1 因为 mobile img 也在 carousel 内
+                        updateText(currentIndex);
+                    }
+                });
+                carouselInit = true;
+
+                // 初始化第一张文字
+                updateText(0);
+
+            }, 1000);
+        });
+
+        // 抽离文字更新逻辑
+        function updateText(index) {
+            $('.text-box').removeClass('show');
+            
+            setTimeout(() => {
+                $('.left-text').html(textData[index].left);
+                $('.right-text').html(textData[index].right);
+                
+                if(textData[index].left) $('.left-text').addClass('show');
+                if(textData[index].right) $('.right-text').addClass('show');
+            }, 300);
+        }
+    });
+	// ========== 鼠标圆圈效果 ==========
+        document.addEventListener('click', function(e) {
+            const circle = document.createElement('div');
+            circle.classList.add('circle');
+            circle.style.left = e.clientX + 'px';
+            circle.style.top = e.clientY + 'px';
+            document.body.appendChild(circle);
+            setTimeout(() => circle.remove(), 1000);
+        });
+    </script>
+</body>
+</html>
