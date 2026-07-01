@@ -28,17 +28,17 @@
         </div>
     </div>
 	<audio autoplay loop preload="auto" src="images/bgm.MP3"></audio>
-	<video 
-            id="hero-video"
-            class="fullscreen-video"
-            autoplay 
-            muted 
-            loop 
-            playsinline
-            poster="video-poster.jpg"
-        >
-            <source src="images/xingkong.mp4" type="video/mp4">
-        </video>
+	<div id="hero-video" class="fullscreen-video">
+  <!-- 背景封面，视频加载前显示 -->
+  <img class="video-poster" src="video-poster.jpg" alt="视频封面">
+  <iframe
+    src="https://www.bilibili.com/blackboard/html5mobileplayer.html?bvid=BV1ND4y187i6&t=15.2&autoplay=1&muted=1&danmaku=0&hideCoverInfo=1&noFullScreenButton=1"
+    frameborder="0"
+    scrolling="no"
+    allow="autoplay; encrypted-media"
+    sandbox="allow-same-origin allow-scripts"
+  ></iframe>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
